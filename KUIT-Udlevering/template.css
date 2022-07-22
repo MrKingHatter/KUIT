@@ -1,0 +1,32 @@
+#secretText::before {
+	display: none;
+	content:
+		"--------------------English Below--------------------\A"
+		"\A"
+		"Kære [User],\A"
+		"Vedrørende Serviceportal nummer: [Case]\A"
+		"\A"
+		"Dit nye IT-udstyr er nu klar til afhentning fra vores Supportcenter på Nørre Campus Panum.\A"
+		"Afhentning Afhentning af computer kan ske alle hverdage fra kl. [Prep] dog senest kl. [Clos].\A"
+		"Afhentning af øvrigt IT-udstyr kan ske alle hverdage fra kl. [Open] til kl. [Shut].\A"
+		"Venligst medbring dit Sags ID-nummer når du afhenter din bestilling.\A"
+		"Adressen for udlevering er: Nørre allé 20 Lokale 23.1.03 2200 København N\A"
+		"\A"
+		"Med venlig hilsen\A"
+		"[Send]\A"
+		"\A"
+		"-----------------------------------------------------\A"
+		"\A"
+		"Dear [User],\A"
+		"Regarding Service Portal number: [Case]\A"
+		"\A"
+		"Your new IT equipment is now ready for pickup at the Support Center in Nørre Campus Panum.\A"
+		"Pickup Computers can be picked up on workdays from [Prep] and no later than [Clos].\A"
+		"Other IT-equipment can be picked up on workdays between [Open] and [Shut].\A"
+		"Please bring the Case ID-number when you come to pickup your order.\A"
+		"Pickup location: Nørre allé 20 Room 23.1.03 2200 Copenhagen N\A"
+		"\A"
+		"Sincerely\A"
+		"[Send]\A"
+		;
+	}
