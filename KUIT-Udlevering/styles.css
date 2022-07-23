@@ -29,7 +29,7 @@ input[type="text"] {
 
 input[type="submit"] {
     width: calc(var(--main-text-width) / 4 - 10px);
-    height: 30px;
+    height: 36px;
 }
 
 button {
