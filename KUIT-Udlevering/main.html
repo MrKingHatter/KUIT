@@ -4,21 +4,9 @@
         <title>KU-IT udleveringstekst</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="template.css">
-        <script>
-          window.onload = init;
-
-          function init() {
-            var text = window.getComputedStyle(
-              document.getElementById("secretText"),":before"
-            ).content;
-            
-            text = text.substring(1, text.length-1).split("\\a");
-            text = text.map(function(e) { return e.trim(); });
-            text = text.join("\n");
-
-            document.getElementById("template").value = text
-          }
+        <script src="template.txt"></script>
+        <script>         
+          window.onload = readFile;
 
           function parseLate(open, shut, prep, clos) {
             const zeroPad = (num, places) => String(num).padStart(places, '0')
@@ -71,7 +59,12 @@
               document.getElementById("copy").innerHTML = oldtext;
             }, 2000);
           }
+
+          function readFile() {
+            document.getElementById("template").value = template.substring(1, template.length-1);;
+          }
         </script>
+        
     </head>
     <body>
         <h1>
@@ -98,7 +91,7 @@
               <h4>
                 Template:
               </h4>
-              <textarea id="template" rows=40></textarea>
+              <textarea id="template" rows=40 value="template.txt"></textarea>
             </div>
             <div class="resultManager">
               <h4>
@@ -109,7 +102,6 @@
                 Copy to clipboard
               </button>
             </div>
-          </div>
-          <div id="secretText"></div>   
+          </div> 
     </body>
 </html>
