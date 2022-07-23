@@ -1,0 +1,54 @@
+:root {
+  --main-text-width: 1000px;
+}
+
+body {
+  background-color: black;
+  color: darkgray;
+  font-size: 20px;
+}
+
+.textManager {
+  width: var(--main-text-width);
+  overflow: hidden;
+}
+
+.templateManager {
+  width: calc(var(--main-text-width) / 2);
+  float: left;
+}
+
+.resultManager {
+  width: calc(var(--main-text-width) / 2);
+  float: right;
+}
+
+textarea {
+  width: calc(var(--main-text-width) / 2 - 10px);
+  resize: none;
+  background-color: black;
+  color: darkgray;
+}
+
+input {
+  background-color: black;
+  color: darkgray;
+}
+
+input[type="text"] {
+  width: calc(var(--main-text-width) / 4 - 10px);
+  height: 30px;
+}
+
+input[type="submit"] {
+  background-color: darkslategray;
+  width: calc(var(--main-text-width) / 4 - 10px);
+  height: 36px;
+}
+
+button {
+  background-color: darkslategray;
+  color: darkgray;
+  width: calc(var(--main-text-width) / 2 - 4px);
+  height: 30px;
+}

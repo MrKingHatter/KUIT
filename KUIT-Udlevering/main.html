@@ -3,7 +3,7 @@
     <head>
         <title>KU-IT udleveringstekst</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="light-style.css" id="theme">
         <script src="template.txt"></script>
         <script src="script.js"></script>
         
@@ -39,13 +39,16 @@
               <h4>
                 Template:
               </h4>
-              <textarea id="template" rows=40 value="template.txt"></textarea>
+              <textarea id="template" rows=40></textarea>
+              <button id="darkmode" onclick="darkmode()">
+                Dark mode
+              </button>
             </div>
             <div class="resultManager">
               <h4>
                 Result:
               </h4>
-              <textarea id="result" placeholder="Click Auto-fill to generate text" readonly rows=40></textarea>
+              <textarea id="result" placeholder="Click Auto-fill to generate text" rows=40></textarea>
               <button onclick="copy2Clipboard()" id="copy">
                 Copy to clipboard
               </button>

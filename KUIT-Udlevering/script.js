@@ -1,4 +1,8 @@
-window.onload = readFile;
+window.onload = function(){
+    readFile();
+    darkmode();
+};
+
 function parseLate(open, shut, prep, clos) {
     const zeroPad = (num, places) => String(num).padStart(places, '0')
 
@@ -58,4 +62,17 @@ function copy2Clipboard() {
 
 function readFile() {
     document.getElementById("template").value = template.substring(1, template.length-1);;
+    }
+
+function darkmode() {
+    var sheethrefs = ["light-style.css", "dark-style.css"];
+    var element = document.getElementById("theme");
+    var button = document.getElementById("darkmode");
+    if (element.getAttribute("href") == sheethrefs[0]) {
+        button.innerHTML = "Light mode";
+        element.href = sheethrefs[1];
+    } else {
+        button.innerHTML = "Dark mode";
+        element.href = sheethrefs[0];
+    }
     }
