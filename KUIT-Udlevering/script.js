@@ -37,6 +37,11 @@ function generateText() {
     text = text.replaceAll("[Clos]", clos);
         
     document.getElementById("result").value = text;
+
+    var auto = document.getElementById("autocopy")
+    if (auto.checked == true) {
+        copy2Clipboard();
+    }
         
     return false;
     }
