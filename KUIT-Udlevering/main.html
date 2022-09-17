@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>KU-IT udleveringstekst</title>
+        <title>KU-IT udleveringstekst v1.2</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="stylesheet" href="light-style.css" id="theme">
         <script src="template.txt"></script>
         <script src="script.js"></script>
-        
     </head>
     <body>
         <h1>
@@ -18,17 +17,16 @@
               <input type="time" id="open" value="08:00">
               <label for="shut">Closing Time:</label>
               <input type="time" id="shut" value="16:00">
-              <label for="prep">Earliest Time:</label>
-              <input type="time" id="prep" value="00:30">
-              <label for="clos">Lastest Time:</label>
-              <input type="time" id="clos" value="00:30">
+              <label for="prep">Margin Time:</label>
+              <input type="text" id="prep" value="00:30">
+              <button id="reset", onclick="clearUser()">Reset</button>
               <label for="autocopy">Copy immediately:</label>
               <input type="checkbox" id="autocopy">
             </form>
           </div>
           <div class="inputDiv">
             <form>
-              <input type="text" id="send" placeholder="Senders name" value="KU-IT Support">
+              <input type="text" id="send" placeholder="Senders name">
               <input type="text" id="user" placeholder="Users name">
               <input type="text" id="case" placeholder="Case number">
               <input type="submit" value="Auto-fill" onclick="return generateText()">

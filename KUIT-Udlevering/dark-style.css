@@ -23,6 +23,10 @@ body {
   float: right;
 }
 
+.inputDiv {
+  margin: 5px;
+} 
+
 textarea {
   width: calc(var(--main-text-width) / 2 - 10px);
   resize: none;
@@ -44,6 +48,20 @@ input[type="submit"] {
   background-color: darkslategray;
   width: calc(var(--main-text-width) / 4 - 10px);
   height: 36px;
+}
+
+#prep {
+  background-color: black;
+  color: darkgray;
+  width: calc(var(--main-text-width) / 8 - 10px);
+  height: 24px;
+}
+
+#reset {
+  background-color: darkslategray;
+  color: darkgray;
+  width: calc(var(--main-text-width) / 8 - 10px);
+  height: 30px;
 }
 
 button {

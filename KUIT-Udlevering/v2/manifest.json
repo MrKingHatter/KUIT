@@ -1,0 +1,19 @@
+{
+    "name": "KU-IT Udleveringstekst",
+    "version": "2.0",
+    "description": "Quickly and easily generate the proper mail for KU-IT Udlevering",
+    "permissions": ["storage", "tabs"],
+    "manifest_version": 3,
+    "icons": {
+        "128": "icon.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+        "matches": ["https://serviceportal.ku.dk/CherwellClient/*"],
+        "js": ["template.txt", "script.js"]
+        }
+    ]
+}

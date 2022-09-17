@@ -21,6 +21,10 @@ body {
   float: right;
 }
 
+.inputDiv {
+  margin: 5px;
+} 
+
 textarea {
   width: calc(var(--main-text-width) / 2 - 10px);
   resize: none;
@@ -34,6 +38,16 @@ input[type="text"] {
 input[type="submit"] {
     width: calc(var(--main-text-width) / 4 - 10px);
     height: 36px;
+}
+
+#prep {
+  width: calc(var(--main-text-width) / 8 - 10px);
+    height: 24px;
+}
+
+#reset {
+  width: calc(var(--main-text-width) / 8 - 10px);
+    height: 30px;
 }
 
 button {
